@@ -310,8 +310,6 @@ const Book: React.FC<BookProps> = ({ textPages, editable, onSign, onEdit, onClos
             {signClickedOnce ? 'Sign and Save' : 'Sign'}
           </Button>
         )}
-
-        {editable && !signClickedOnce && <Button onClick={handleSign}>Sign</Button>}
         {editable && !signClickedOnce && <Button onClick={handleEdit}>Edit</Button>}
         <Button onClick={handleCancel}>{signClickedOnce ? 'Cancel' : 'Close'}</Button>
       </div>
